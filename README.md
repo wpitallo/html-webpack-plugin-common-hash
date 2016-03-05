@@ -1,6 +1,6 @@
 HTML Webpack Plugin Common Hash
 =================== 
-[![npm version](https://badge.fury.io/js/html-webpack-plugin.svg)](http://badge.fury.io/js/html-webpack-plugin) [![Dependency Status](https://david-dm.org/ampedandwired/html-webpack-plugin.svg)](https://david-dm.org/ampedandwired/html-webpack-plugin) [![bitHound Score](https://www.bithound.io/github/ampedandwired/html-webpack-plugin/badges/score.svg)](https://www.bithound.io/github/ampedandwired/html-webpack-plugin) [![Build status](https://travis-ci.org/ampedandwired/html-webpack-plugin.svg)](https://travis-ci.org/ampedandwired/html-webpack-plugin)
+[![npm version](https://badge.fury.io/js/html-webpack-plugin-common-hash.svg)](http://badge.fury.io/js/html-webpack-plugin-common-hash)
 
 This is a [webpack](http://webpack.github.io/) plugin that simplifies creation of HTML files to serve your
 webpack bundles. This is especially useful for webpack bundles that include
@@ -13,13 +13,6 @@ Install the plugin with npm:
 ```shell
 $ npm install html-webpack-plugin --save-dev
 ```
-
-There is also a [2.0 beta branch](https://github.com/ampedandwired/html-webpack-plugin/tree/feature/loaders) which allows using loaders for templates.
-For further information on 2.0 see the according [pull-request](https://github.com/ampedandwired/html-webpack-plugin/pull/41) 
-```shell
-$ npm install html-webpack-plugin@2 --save-dev
-```
-
 
 Basic Usage
 -----------
@@ -255,3 +248,45 @@ plugins: [
 ```
 
 
+Hashing common chunks
+----------------
+
+To hash a common file, set its name in the options (commonFileName):
+```javascript
+    new HtmlWebpackPlugin({
+      chunks          : ['authentication'],
+      filename        : 'index.html',
+      package         : pkg,
+      template        : path.join(libPath, 'index.html'),
+      commonFileName  : 'common',
+      serviceApi      : serviceApi
+    }),
+   new HtmlWebpackPlugin({
+      chunks          : ['system'],
+      filename        : 'system.init.html',
+      package         : pkg,
+      template        : 'system.init.html',
+      commonFileName  : 'common',
+      serviceApi      : serviceApi
+    }),
+```
+
+You can then use it in your template like this:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+     <script src="{%= o.htmlWebpackPlugin.commonFileName %}"></script>
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+The output will be somthing like this:
+
+```html
+<script src="common-d60110.js"></script>
+```
