@@ -1,6 +1,6 @@
 {
   "name": "html-webpack-plugin-common-hash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simplifies creation of HTML files to serve your webpack bundles with added support for using hashes with common chunks",
   "main": "index.js",
   "files": [
