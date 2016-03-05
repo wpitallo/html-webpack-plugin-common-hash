@@ -252,7 +252,7 @@ Hashing common chunks
 ----------------
 
 To hash a common file, set its name in the options (commonFileName):
-
+```javascript
     new HtmlWebpackPlugin({
       chunks          : ['authentication'],
       filename        : 'index.html',
@@ -265,10 +265,11 @@ To hash a common file, set its name in the options (commonFileName):
       chunks          : ['system'],
       filename        : 'system.init.html',
       package         : pkg,
-      template        : `system.init.html`,
+      template        : 'system.init.html',
       commonFileName  : 'common',
       serviceApi      : serviceApi
     }),
+```
 
 You can then use it in your template like this:
 
