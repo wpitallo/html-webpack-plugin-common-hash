@@ -286,4 +286,6 @@ You can then use it in your template like this:
 
 The output will be somthing like this:
 
+```html
 <script src="common-d60110.js"></script>
+```
