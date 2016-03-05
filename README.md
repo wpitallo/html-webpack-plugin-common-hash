@@ -1,4 +1,4 @@
-HTML Webpack Plugin
+HTML Webpack Plugin Common Hash
 =================== 
 [![npm version](https://badge.fury.io/js/html-webpack-plugin.svg)](http://badge.fury.io/js/html-webpack-plugin) [![Dependency Status](https://david-dm.org/ampedandwired/html-webpack-plugin.svg)](https://david-dm.org/ampedandwired/html-webpack-plugin) [![bitHound Score](https://www.bithound.io/github/ampedandwired/html-webpack-plugin/badges/score.svg)](https://www.bithound.io/github/ampedandwired/html-webpack-plugin) [![Build status](https://travis-ci.org/ampedandwired/html-webpack-plugin.svg)](https://travis-ci.org/ampedandwired/html-webpack-plugin)
 
