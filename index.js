@@ -32,7 +32,7 @@ HtmlWebpackPlugin.prototype.apply = function(compiler) {
             files: self.htmlWebpackPluginAssets(compilation, webpackStatsJson, self.options.chunks, self.options.excludeChunks),
             options: self.options,
             commonFileName:  self.options.commonFileName + '-' + webpackStatsJson.hash.toString().substring(0, 6) + '.js',
-            serviceApi: self.options.serviceApi
+            systemConfig: self.options.systemConfig
           }
         };
         // Deprecate templateParams.htmlWebpackPlugin.assets
@@ -119,10 +119,12 @@ HtmlWebpackPlugin.prototype.getTemplateContent = function(compilation, templateP
  * Compile the html template and push the result to the compilation assets
  */
 HtmlWebpackPlugin.prototype.emitHtml = function(compilation, htmlTemplateContent, templateParams, outputFilename) {
-  var html;
+  var html
   // blueimp-tmpl processing
   try {
     html = tmpl(htmlTemplateContent, templateParams);
+/*        console.log(convert(html));
+        html = convert(html);*/
   } catch(e) {
     return Promise.reject(new Error('HtmlWebpackPlugin: template error ' + e));
   }
@@ -147,6 +149,13 @@ HtmlWebpackPlugin.prototype.emitHtml = function(compilation, htmlTemplateContent
     }
   };
 };
+
+function convert(str)
+{
+  str = str.replace(/&quot;/g, '"');
+  str = str.replace(/&#039;/g,/'/);
+  return str;
+}
 
 /*
  * Pushes the content of the given filename to the compilation assets

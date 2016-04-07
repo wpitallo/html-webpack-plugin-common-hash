@@ -1,19 +1,51 @@
 {
-  "name": "html-webpack-plugin-common-hash",
-  "version": "1.0.1",
-  "description": "Simplifies creation of HTML files to serve your webpack bundles with added support for using hashes with common chunks",
-  "main": "index.js",
-  "files": [
-    "index.js",
-    "default_index.ejs",
-    "lib/"
+  "_args": [
+    [
+      "html-webpack-plugin-common-hash@^1.0.3",
+      "C:\\CodeScienceGIT\\CodeScience.Clients\\Client.MissClark"
+    ]
   ],
+  "_from": "html-webpack-plugin-common-hash@>=1.0.3 <2.0.0",
+  "_id": "html-webpack-plugin-common-hash@1.0.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/html-webpack-plugin-common-hash",
+  "_nodeVersion": "4.2.6",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/html-webpack-plugin-common-hash-1.0.3.tgz_1457382851349_0.9721420637797564"
+  },
+  "_npmUser": {
+    "email": "wpitallo@gmail.com",
+    "name": "wpitallo"
+  },
+  "_npmVersion": "3.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "html-webpack-plugin-common-hash",
+    "raw": "html-webpack-plugin-common-hash@^1.0.3",
+    "rawSpec": "^1.0.3",
+    "scope": null,
+    "spec": ">=1.0.3 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_shasum": "74c32f82fa85b0a9f9331c88185fb6611fd17a0a",
+  "_shrinkwrap": null,
+  "_spec": "html-webpack-plugin-common-hash@^1.0.3",
+  "_where": "C:\\CodeScienceGIT\\CodeScience.Clients\\Client.MissClark",
+  "bugs": {
+    "url": "https://github.com/wpitallo/html-webpack-plugin-common-hash/issues"
+  },
   "dependencies": {
     "bluebird": "^3.0.5",
     "blueimp-tmpl": "^3.3.0",
     "html-minifier": "^1.0.0",
     "lodash": "^4.8.2"
   },
+  "description": "Simplifies creation of HTML files to serve your webpack bundles with added support for using hashes with common chunks",
   "devDependencies": {
     "css-loader": "^0.23.0",
     "es6-promise": "^3.0.2",
@@ -27,11 +59,16 @@
     "webpack": "^1.12.8"
   },
   "directories": {},
+  "dist": {
+    "shasum": "74c32f82fa85b0a9f9331c88185fb6611fd17a0a",
+    "tarball": "http://registry.npmjs.org/html-webpack-plugin-common-hash/-/html-webpack-plugin-common-hash-1.0.3.tgz"
+  },
   "files": [
     "default_index.html",
     "default_inject_index.html",
     "index.js"
   ],
+  "gitHead": "e4ace8cbcd0c576ce89541c85671aa68aeafb4d7",
   "homepage": "https://github.com/wpitallo/html-webpack-plugin-common-hash",
   "keywords": [
     "generate",
@@ -43,16 +80,20 @@
   "main": "index.js",
   "maintainers": [
     {
-      "name": "Warren Pitallo",
+      "name": "wpitallo",
       "email": "wpitallo@gmail.com"
     }
   ],
+  "name": "html-webpack-plugin-common-hash",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wpitallo/html-webpack-plugin-common-hash.git"
+    "url": "git+https://github.com/wpitallo/html-webpack-plugin-common-hash.git"
   },
   "scripts": {
     "pretest": "jshint *.js spec",
     "test": "jasmine-node --captureExceptions spec"
-  }
+  },
+  "version": "1.0.4"
 }
