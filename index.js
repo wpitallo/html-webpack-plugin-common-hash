@@ -3,7 +3,7 @@ var fs = require('fs');
 var path = require('path');
  var urlModule = require('url');
 var _ = require('lodash');
-var tmpl = require('blueimp-tmpl').tmpl;
+var tmpl = require('blueimp-tmpl');
 var Promise = require('bluebird');
 Promise.promisifyAll(fs);
 
