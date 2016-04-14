@@ -95,5 +95,5 @@
     "pretest": "jshint *.js spec",
     "test": "jasmine-node --captureExceptions spec"
   },
-  "version": "1.0.4"
+  "version": "1.0.5"
 }

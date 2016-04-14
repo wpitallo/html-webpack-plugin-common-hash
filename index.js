@@ -25,13 +25,15 @@ HtmlWebpackPlugin.prototype.apply = function(compiler) {
       })
       // Generate the html
       .then(function() {
+        var commFile = '';
+        if (self.options.commonFileName != '') { commFile = self.options.commonFileName + '-' + webpackStatsJson.hash.toString().substring(0, 6) + '.js' }
         var templateParams = {
           webpack: webpackStatsJson,
           webpackConfig: compilation.options,
           htmlWebpackPlugin: {
             files: self.htmlWebpackPluginAssets(compilation, webpackStatsJson, self.options.chunks, self.options.excludeChunks),
             options: self.options,
-            commonFileName:  self.options.commonFileName + '-' + webpackStatsJson.hash.toString().substring(0, 6) + '.js',
+            commonFileName:commFile ,
             systemConfig: self.options.systemConfig
           }
         };
