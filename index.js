@@ -33,10 +33,13 @@ HtmlWebpackPlugin.prototype.apply = function(compiler) {
           htmlWebpackPlugin: {
             files: self.htmlWebpackPluginAssets(compilation, webpackStatsJson, self.options.chunks, self.options.excludeChunks),
             options: self.options,
-            commonFileName:commFile ,
+            commonFileName:commFile,
             systemConfig: self.options.systemConfig
           }
+
         };
+
+        templateParams.htmlWebpackPlugin.files.dlls = self.options.systemConfig.dlls;
         // Deprecate templateParams.htmlWebpackPlugin.assets
         var assets = self.htmlWebpackPluginLegacyAssets(compilation, webpackStatsJson);
         Object.defineProperty(templateParams.htmlWebpackPlugin, 'assets', {
@@ -389,3 +392,4 @@ HtmlWebpackPlugin.prototype.appendHash = function (url, hash) {
 
 
 module.exports = HtmlWebpackPlugin;
+
