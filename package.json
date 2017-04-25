@@ -1,47 +1,80 @@
 {
   "_args": [
     [
-      "html-webpack-plugin-common-hash@^1.0.3",
+      "html-webpack-plugin-common-hash@^1.0.6",
       "C:\\CodeScienceGIT\\CodeScience.Clients\\Client.MissClark"
+    ],
+    [
+      {
+        "raw": "html-webpack-plugin-common-hash@^1.0.6",
+        "scope": null,
+        "escapedName": "html-webpack-plugin-common-hash",
+        "name": "html-webpack-plugin-common-hash",
+        "rawSpec": "^1.0.5",
+        "spec": ">=1.0.5 <2.0.0",
+        "type": "range"
+      },
+      "C:\\CodeScience.GitLab\\CodeScience.Clients\\CodeScience.Client.Base"
     ]
   ],
-  "_from": "html-webpack-plugin-common-hash@>=1.0.3 <2.0.0",
-  "_id": "html-webpack-plugin-common-hash@1.0.3",
+  "_from": "html-webpack-plugin-common-hash@^1.0.5",
+  "_id": "html-webpack-plugin-common-hash@1.0.5",
   "_inCache": true,
   "_installable": true,
   "_location": "/html-webpack-plugin-common-hash",
   "_nodeVersion": "4.2.6",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/html-webpack-plugin-common-hash-1.0.3.tgz_1457382851349_0.9721420637797564"
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/html-webpack-plugin-common-hash-1.0.5.tgz_1460670260772_0.506559104193002"
   },
   "_npmUser": {
-    "email": "wpitallo@gmail.com",
-    "name": "wpitallo"
+    "name": "wpitallo",
+    "email": "wpitallo@gmail.com"
   },
   "_npmVersion": "3.6.0",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "amdefine": "1.0.1",
+    "camelcase": "1.2.1",
+    "center-align": "0.1.3",
+    "change-case": "2.3.1",
+    "commander": "2.9.0",
+    "core-util-is": "1.0.2",
+    "decamelize": "1.2.0",
+    "graceful-readlink": "1.0.1",
+    "inherits": "2.0.3",
+    "isarray": "1.0.0",
+    "ncname": "1.0.0",
+    "process-nextick-args": "1.0.7",
+    "relateurl": "0.2.7",
+    "right-align": "0.1.3",
+    "string_decoder": "0.10.31",
+    "typedarray": "0.0.6",
+    "uglify-to-browserify": "1.0.2",
+    "util-deprecate": "1.0.2"
+  },
   "_requested": {
-    "name": "html-webpack-plugin-common-hash",
-    "raw": "html-webpack-plugin-common-hash@^1.0.3",
-    "rawSpec": "^1.0.3",
+    "raw": "html-webpack-plugin-common-hash@^1.0.5",
     "scope": null,
-    "spec": ">=1.0.3 <2.0.0",
+    "escapedName": "html-webpack-plugin-common-hash",
+    "name": "html-webpack-plugin-common-hash",
+    "rawSpec": "^1.0.5",
+    "spec": ">=1.0.5 <2.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_shasum": "74c32f82fa85b0a9f9331c88185fb6611fd17a0a",
+  "_resolved": "https://registry.npmjs.org/html-webpack-plugin-common-hash/-/html-webpack-plugin-common-hash-1.0.5.tgz",
+  "_shasum": "6372a124a45e12771cee20fa85a8f3eab3653d51",
   "_shrinkwrap": null,
-  "_spec": "html-webpack-plugin-common-hash@^1.0.3",
-  "_where": "C:\\CodeScienceGIT\\CodeScience.Clients\\Client.MissClark",
+  "_spec": "html-webpack-plugin-common-hash@^1.0.5",
+  "_where": "C:\\CodeScience.GitLab\\CodeScience.Clients\\CodeScience.Client.Base",
   "bugs": {
     "url": "https://github.com/wpitallo/html-webpack-plugin-common-hash/issues"
   },
   "dependencies": {
-    "bluebird": "^3.0.5",
-    "blueimp-tmpl": "^3.3.0",
+    "bluebird": "^3.4.7",
+    "blueimp-tmpl": "^3.8.0",
     "html-minifier": "^1.0.0",
     "lodash": "^4.8.2"
   },
@@ -60,8 +93,8 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "74c32f82fa85b0a9f9331c88185fb6611fd17a0a",
-    "tarball": "http://registry.npmjs.org/html-webpack-plugin-common-hash/-/html-webpack-plugin-common-hash-1.0.3.tgz"
+    "shasum": "6372a124a45e12771cee20fa85a8f3eab3653d51",
+    "tarball": "https://registry.npmjs.org/html-webpack-plugin-common-hash/-/html-webpack-plugin-common-hash-1.0.5.tgz"
   },
   "files": [
     "default_index.html",
@@ -95,5 +128,5 @@
     "pretest": "jshint *.js spec",
     "test": "jasmine-node --captureExceptions spec"
   },
-  "version": "1.0.5"
+  "version": "1.0.6"
 }
